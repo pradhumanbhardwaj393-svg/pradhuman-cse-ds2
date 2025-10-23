@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student registration form </title>
+<style>     body{
+               font-family: Arial, sans-serif;
+               background-color:white;
+               margin: 0;
+            
+
+          }  
+          container{
+            width: 50%;
+            background-color:white ;
+            margin: 50% auto;
+            
+            border-radius: 8px;
+            box-shadow: 0 0 10 gray ;
+          }
+          h2{
+              text-align: center;
+            color: black; }
+          label{
+                display: block;
+                margin-top: 10px; 
+                font-weight: bold;}
+           input,select{
+            width: 50%;
+            margin-top:5px  ;
+            background-color: aliceblue;
+            border-radius:4px  ;
+            border:2px solid wheat ;
+            box-sizing: border-box;
+           }
+           input [type= "submit"] {   
+            background-color: brown;
+            border:2px solid white ;
+            font-size: small;
+
+           }
+           input[ type= "submit"]:hover {
+             background-color: aliceblue;
+           }
+
+ </style>
+</head>
+<body>
+     <div class="container">
+        <h2>student registration form </h2>
+        <form  method ="" action="">
+            <label for="name ">  full student name </label>
+            <input type="text" placeholder="write student name " required>
+               <label for="email "> student id</label>
+               <input type="email" placeholder="enter ur email" required>
+                  <label for="phone"> enter phone number</label>
+                  <input type="tel" placeholder="enter ur phone number "> 
+                        <label for="Gender"> Gender</label>
+                        <SELect>
+                           <OPTION value="single">male </OPTION>
+                           <option value="single">Female</option>
+                           <option value="single">Other</option>
+
+                        </SELect>
+                      <label for="branch"> branch </label>
+                       <select name="branch" > 
+                         <option value="single">CSE DS  </option>
+                          <option value="single">CSE AIML</option>
+                          <option value="single">CSE CORE </option>
+            
+                       </select>
+                <input type="submit" value="registration">
+                    
+
+
+
+        </form>
+
+     </div>
+    
+</body>
+</html>
