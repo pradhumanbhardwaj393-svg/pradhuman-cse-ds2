@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL ROOM booking  </title>
+     <style>
+          body{
+               font-family: Arial, sans-serif;
+               background-color:white;
+               margin: 0;
+               padding: 0;
+
+          }  
+          container{
+            width: 50%;
+            background-color:white ;
+            margin: 50% auto;
+            padding: 20%;
+            border-radius: 8px;
+            box-shadow: 0 0 10 gray ;
+          }
+          h2{
+              text-align: center;
+            color: black; }
+          label{
+                display: block;
+                margin-top: 10px; 
+                font-weight: bold;
+
+
+          }
+          input,select, textarea 
+          {
+            width: 100%;
+            margin-top:  5px;
+            padding: 5px;
+            border-radius: 4px; 
+            border: 1px solid #ccc ;
+            box-sizing: border-box;
+          }
+          button {
+               margin-top: 15px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+
+          }
+          button:hover{
+          background-color: #4CAF50;  
+          }
+
+
+     </style>
+</head>
+<body>
+   <div class="container">
+    <h2>hotel room booking </h2>
+     <form > 
+        <label for="name"> full name </label>
+        <input type="text"  placeholder=" enter your full name " required>
+             <label for="email"> email address </label>
+              <input type="email"  placeholder=" enter your email " required>
+                  <label for="phone"> phone number </label>
+                  <input type="tel"   placeholder=" enter your phone number " required>
+                      <label for="checkin"> coming date   </label>
+                      <input type="date" id="checkin" name="checkin"  >
+                          <label for="checkout"> valid date </label>
+                          <input type="date" id="checkout"  name="checkout">
+        <label for= " room"> room book for abes student   </label>
+        <select name="room" id="room">
+            <OPTion value=""> SELECT ROOM FOR CSE student</OPTion>
+            <option value="double"> for CSE DS</option>
+            <OPTion value="DOUBLE "> FOR CSE AIML</OPTion>
+            <OPTION value="DOUBLE"> FOR CSE CORE  </OPTION>
+            
+        </select>
+        <LAbel for="guests"> guests from college </LAbel>
+        <input type="number" id="guests" name="guests" min="2" max="6">
+         
+       <label for="requests"> request for hotel  </label>
+        <textarea name="request " id="request " rows="3" placeholder="Write ur request here "></textarea>
+          
+        <button type="submit"> book now
+        </button>
+        <button type="reset " style=" background-color: aquamarine;" >reset</button>
+
+     </form>
+   </div>
+</body>
+</html>
