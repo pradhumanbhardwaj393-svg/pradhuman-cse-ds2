@@ -67,7 +67,7 @@
              <label for="email"> email address </label>
               <input type="email"  placeholder=" enter your email " required>
                   <label for="phone"> phone number </label>
-                  <input type="tel"   placeholder=" enter your phone number " required>
+                  <input type="tel"  minlength="10" maxlength="10" placeholder=" enter your phone number " required>
                       <label for="checkin"> coming date   </label>
                       <input type="date" id="checkin" name="checkin"  >
                           <label for="checkout"> valid date </label>
@@ -80,8 +80,7 @@
             <OPTION value="DOUBLE"> FOR CSE CORE  </OPTION>
             
         </select>
-        <LAbel for="guests"> guests from college </LAbel>
-        <input type="number" id="guests" name="guests" min="2" max="6">
+       
          
        <label for="requests"> request for hotel  </label>
         <textarea name="request " id="request " rows="3" placeholder="Write ur request here "></textarea>
