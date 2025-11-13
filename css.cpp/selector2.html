@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+<style> 
+    /* #main p{
+        color: aquamarine;   /*direct child*/
+
+     */
+    /* #inside p{
+        color: blue;   /*indirect child*/
+     */
+    /* /* #main > p{
+        background-color: black; /*change in direct child*/
+     */
+    /* #main + p{
+        background-color: blue; /* child +other para*/
+     */ 
+    /* #main ~ p{
+        background-color: cadetblue; /*change in other child para*/
+     */
+    /* a:link{ */
+        /* text-decoration: none; font-size: larger; */
+    
+    /* a:hover{ */
+        /* color: chartreuse; font-size: 25px; */
+    
+    /* a:active{ */
+        /* color: red ;  */ 
+
+    #main .b{
+        color: aqua;
+    }
+    #main p:nth-child(even){
+        color: blue;
+    }
+    #main p::first-letter{
+        color: antiquewhite;
+    }
+    #main p::first-line{
+        background-color:lightblue;
+    }
+    #main p::before{
+        content: "starting";
+        color: red;
+        font-size: large;
+    }
+    #main p::after{
+        content: "read more";
+        color:  blue;
+        font-size: large;
+    }
+   
+    
+</style>
+</head>
+<body> <!--csss combination -->
+    <div id="main"><!--main chain -->
+<p class="b">
+    lorem,Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eum cumque? Recusandae inventore, doloremque maxime unde quasi error nisi cumque maiores eum corporis minima, possimus earum voluptates ducimus reprehenderit tempora.
+</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum incidunt earum officiis reiciendis consequuntur illo a. Officiis, culpa corrupti, expedita eos laborum nam laudantium error debitis commodi ex veniam aspernatur.</p>
+<p class="b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempora modi voluptate expedita molestias quam quibusdam, odio esse. Modi, quasi? Praesentium reiciendis quae quasi consectetur sit fugit ex tempora architecto!\</p>
+
+<div id="inside"><!--indirect chain-->
+    <p>lorem,Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero nihil quis facilis ab rerum doloremque sed totam aliquam. Veniam incidunt dolores at omnis dolore vero laboriosam est doloremque exercitationem nisi.</p>
+</div><!--inside first
+--> </div>
+    <!--div first -->
+
+    <p> lorem,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt itaque, beatae tempora sapiente tempore facere qui repellat error excepturi deserunt sed. Vel consequatur corrupti sunt porro illo sequi dolore maxime!</p>
+    <a href="">visit my page</a>
+    <p><!--suspance sibiling-->
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed, nulla voluptas porro sequi nihil dolorum consectetur numquam, libero cumque reprehenderit velit iste ut voluptates quo! Fuga vitae aperiam nam?        
+    </p>
+</body>
+</html>
