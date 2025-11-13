@@ -1,0 +1,30 @@
+body{
+
+background-color: aqua;
+margin: 0%;
+padding: 0%;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 60px;
+    font-style: italic;
+    text-align: justify;
+    text-decoration: underline;
+    text-transform: lowercase;
+    text-shadow: 10px 10px 10px red;
+    color: blue ;
+    border: dotted;
+    text-align: center;
+    background-color: pink;
+    display: inline-block;
+}
+img{
+    border: 2px solid red;
+    border-radius: 50px;
+    float: left;
+    margin-right: 20px;
+    padding: 3px;
+
+
+}
