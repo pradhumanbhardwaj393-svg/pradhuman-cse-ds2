@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+    <style>
+     html,*{
+        padding: auto;
+        box-sizing: border-box;
+     }
+     main{
+        width: 1200px;
+        height: 400px ;
+        background-color: aquamarine;
+        display: grid;
+        grid-template-rows: 80px 70px 200px 200px ;
+       gap: 20px;
+
+     }
+     .b{
+        background-color: aqua;
+        gap:5px;
+     }
+     .b:nth-child(3){
+        width: 1200px;
+        height: 400px;
+        display: grid;
+        grid-template-columns: 200px auto 100px;
+        gap: 5px;
+
+     }
+     .b1{
+        background-color: red;
+     }
+     .b2{
+        background-color: blueviolet;
+     }
+   .b3{
+    background-color: brown;
+    
+   }
+   
+   
+
+    </style>
+</head>
+<body><main>
+    <div class="b">heading </div>
+    <div class="b"> navi</div>
+    <div class="b"> 
+        <div class="b1">content</div>
+        <div class="b2 "> main content </div>
+        <div class="b3"> content </div>
+    </div>
+    <div class="b">footer</div>
+</main>
+</body>
+</html>
