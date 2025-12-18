@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,*{
+            box-sizing: border-box;
+            padding: 0px;
+             scroll-behavior: smooth;
+        }
+        main{
+            width: 1200px;
+            height: auto;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 120px 300px 400px 100px 500px;
+            gap: 10px;
+            position:relative ;
+            top: 60px;
+            z-index: 0;
+
+        }
+        #header,#about,#services,#gallery,#banner{
+            background-color: aqua;
+            place-items: center;
+            display: grid;
+        }
+        nav{
+            width: 100%;
+            height: 50px;
+            background-color:gray ;
+            position: fixed;
+            z-index: 1;
+        }
+         nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            line-height: 50px;
+        }
+        nav ul a{
+            text-decoration: none;
+            color: #000;
+        }
+        nav ul a:hover{
+            color: #F04;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#header ">home</a></li>
+            <li><a href="#banner">about us</a></li>
+            <li><a href="#about">services</a></li>
+            <li><a href="#services">gallery</a>
+            </li>
+            <li><a href="#gallery">contact us</a></li>
+        </ul>
+    </nav>
+<main>
+    <div></div>
+<div id="header">HEADER</div>
+<div id="banner">BANNER</div>
+<div id="about"> ABOUT US</div>
+<div id="services">SERVICES</div>
+<div id="gallery"> GALLARY</div>
+</main>
+</body>
+</html>
+
